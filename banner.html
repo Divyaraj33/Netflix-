@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .main{
+            background-image: url(mountain.jpg);
+
+            height: 70vh;
+            width: 100%;
+        } 
+        .dots{
+            height: 800px;
+            width: 50px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bolder;
+            gap: 10px;
+            margin-left: 50%;
+
+        }
+        .dots button{
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: flex;
+            
+        }
+        .image{
+            position: relative;
+        }
+        .fav1{
+            position: absolute;
+            top: 200px;
+            right: 0;
+            padding-right: 15px;
+            
+        }
+        .fav2{
+            position: absolute;
+            top: 200px;
+            left: 0;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="image">
+            <div class="fav1">
+                <i class="fa-solid fa-arrow-right fa-xl" style="color: #ffffff;"></i>
+            </div>
+            <div class="fav2">
+                <i class="fa-solid fa-arrow-left fa-xl" style="color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="dots">
+            <button></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div>
+</body>
+</html>
